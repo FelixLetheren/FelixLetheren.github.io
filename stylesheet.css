@@ -44,6 +44,9 @@ h2{
 .bio h2{
     color: #EAE2B7;
 }
+.email{
+    color: #EAE2B7;
+}
 h3{
     font-size:2.5rem;
     color: #EAE2B7;
@@ -132,6 +135,12 @@ p{
     bottom:20px;
     width:130px;
     height:130px;
-
+}
+.email{
+    width:500px;
+}
+.social-cont{
+    display:flex;
+    justify-content: space-between;
 
 }
