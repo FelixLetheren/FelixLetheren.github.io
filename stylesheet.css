@@ -3,6 +3,9 @@
     font-size: 62.5%;
     font-family:"Helvetica Neue",sans-serif;
 }
+body{
+    background-color: #003049;
+}
 header{
     background-color: #003049;
     position: sticky;
@@ -28,11 +31,18 @@ h1{
     font-size:7rem;
     margin:0;
     color: #003049;
+    margin-left: 20px;
 }
 h2{
     font-size:3rem;
     margin:0;
     color: #F77F00;
+}
+.skills h2{
+    color: #EAE2B7;
+}
+.bio h2{
+    color: #EAE2B7;
 }
 h3{
     font-size:2.5rem;
@@ -40,6 +50,10 @@ h3{
 }
 h4{
     font-size:1.5rem;
+    color: #EAE2B7;
+}
+p{
+    font-size:2rem;
     color: #EAE2B7;
 }
 .nav-bar a{
@@ -60,7 +74,7 @@ h4{
     margin-left:20px;
 }
 .container{
-    width:1000px;
+    width:1200px;
     margin:0 auto;
 }
 .container::after{
@@ -71,7 +85,7 @@ h4{
 .nav-bar{
     width:80%;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     float:left;
     align-items: flex-end;
     height:60px;
@@ -86,4 +100,38 @@ h4{
     justify-content: space-between;
     width:1000px;
     margin: 0 auto;
+}
+.port-item{
+    width:400px;
+}
+.bio{
+    width:550px;
+    border: solid 5px #003049;
+    padding:10px;
+    background-color: #003049;
+}
+.skills{
+    background-color: #003049;
+    width:350px;
+    padding:10px;
+}
+.exp-img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    border: solid 6px #F77F00;
+    float:left;
+    margin-right: 20px;
+}
+.exp-img img{
+    position: absolute;
+    left:4px;
+    bottom:20px;
+    width:130px;
+    height:130px;
+
+
 }
