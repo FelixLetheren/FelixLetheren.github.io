@@ -136,11 +136,26 @@ p{
     width:130px;
     height:130px;
 }
+.work-exp-box{
+    margin-left: 20px;
+}
 .email{
     width:500px;
 }
 .social-cont{
     display:flex;
     justify-content: space-between;
+
+}
+
+@media only screen and (max-width: 1050px) {
+    .port-cont{
+        width:900px;
+    }
+}
+@media only screen and (max-width: 930px){
+    .port-cont{
+        width:850px;
+    }
 
 }
