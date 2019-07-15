@@ -4,30 +4,43 @@
     font-family:"Helvetica Neue",sans-serif;
 }
 header{
-    background-color: #444444;
-    overflow:auto;
+    background-color: #003049;
+}
+header::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 .main-back{
-    background-color: #FCA404;
+    background-color: #F77F00;
     background-image:
             linear-gradient(
             to bottom,
-            #FCA404 0%,
-            #FCA404 40%,
-            #444444 40%,
-            #444444 100%
+            #F77F00 0%,
+            #F77F00 40%,
+            #003049 40%,
+            #003049 100%
             );
 }
 h1{
     font-size:5rem;
     margin:0;
+    color: #003049;
 }
 h2{
     font-size:3rem;
     font-family:"Helvetica Neue",sans-serif;
+    margin:0;
+    color: #F77F00;
 }
-a{
+.nav-bar a{
     font-size:2.5rem;
+    color:#F77F00;
+    border: 2px solid #F77F00;
+    padding:5px;
+}
+.right{
+    float:right;
 }
 .logo{
     float:left;
@@ -36,4 +49,22 @@ a{
 .container{
     width:1000px;
     margin:0 auto;
+}
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.nav-bar{
+    width:80%;
+    display:flex;
+    justify-content: space-around;
+    float:left;
+    align-items: flex-end;
+    height:60px;
+    text-transform: uppercase;
+}
+.nav-cont{
+    float:right;
+    width:700px;
 }
