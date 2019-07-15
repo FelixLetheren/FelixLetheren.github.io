@@ -23,7 +23,7 @@ header::after{
             );
 }
 h1{
-    font-size:5rem;
+    font-size:7rem;
     margin:0;
     color: #003049;
 }
@@ -38,6 +38,10 @@ h2{
     color:#F77F00;
     border: 2px solid #F77F00;
     padding:5px;
+    text-decoration: none;
+}
+.nav-bar a:hover{
+    color: #EAE2B7;
 }
 .right{
     float:right;
@@ -67,4 +71,8 @@ h2{
 .nav-cont{
     float:right;
     width:700px;
+}
+.port-cont{
+    display: flex;
+    justify-content: space-around;
 }
