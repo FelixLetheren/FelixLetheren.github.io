@@ -1,4 +1,39 @@
 *{
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family:"Helvetica Neue",sans-serif;
+}
+header{
+    background-color: #444444;
+    overflow:auto;
+}
+.main-back{
+    background-color: #FCA404;
+    background-image:
+            linear-gradient(
+            to bottom,
+            #FCA404 0%,
+            #FCA404 40%,
+            #444444 40%,
+            #444444 100%
+            );
+}
+h1{
+    font-size:5rem;
+    margin:0;
+}
+h2{
+    font-size:3rem;
+    font-family:"Helvetica Neue",sans-serif;
+}
+a{
+    font-size:2.5rem;
+}
+.logo{
+    float:left;
+    margin-left:20px;
+}
+.container{
+    width:1000px;
+    margin:0 auto;
 }
