@@ -11,7 +11,7 @@ body {
 header {
     background-color: #003049;
     position: sticky;
-    top: 0px;
+    top: 0;
 }
 
 header::after {
@@ -20,7 +20,7 @@ header::after {
     display: table;
 }
 
-.main-back {
+.background {
     background-color: #F77F00;
     background-image: linear-gradient(
             to bottom,
@@ -86,6 +86,10 @@ a {
 
 .nav-bar a:hover {
     color: #EAE2B7;
+}
+
+.left {
+    float: left;
 }
 
 .right {
@@ -198,14 +202,6 @@ a {
     height: 140px;
 }
 
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
 @media only screen and (max-width: 1200px) {
     .exp-entry p {
         width: 700px;
@@ -270,7 +266,6 @@ a {
         margin: 0 auto;
         height: 280px;
     }
-
 
 }
 
