@@ -158,15 +158,18 @@ a {
     width: 350px;
     padding: 10px;
 }
-.skill-container{
+
+.skill-container {
     display: flex;
     justify-content: space-around;
 }
-.skill-img{
-    height:80px;
-    width:80px;
+
+.skill-img {
+    height: 80px;
+    width: 80px;
 
 }
+
 .exp-img {
     height: 150px;
     width: 150px;
@@ -342,8 +345,9 @@ a {
     .bio {
         width: 300px;
     }
-    .about-container{
-        height:1000px;
+
+    .about-container {
+        height: 1000px;
     }
 
     .skills {
