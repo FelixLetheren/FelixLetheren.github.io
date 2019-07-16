@@ -11,7 +11,7 @@ body {
 header {
     background-color: #003049;
     position: sticky;
-    top: 0px;
+    top: 0;
 }
 
 header::after {
@@ -20,7 +20,7 @@ header::after {
     display: table;
 }
 
-.main-back {
+.background {
     background-color: #F77F00;
     background-image: linear-gradient(
             to bottom,
@@ -88,6 +88,10 @@ a {
     color: #EAE2B7;
 }
 
+.left {
+    float: left;
+}
+
 .right {
     float: right;
 }
@@ -118,12 +122,12 @@ a {
     text-transform: uppercase;
 }
 
-.nav-cont {
+.nav-container {
     float: right;
     width: 700px;
 }
 
-.port-cont {
+.port-container {
     display: flex;
     justify-content: space-between;
     width: 1000px;
@@ -134,7 +138,7 @@ a {
     width: 400px;
 }
 
-.about-cont {
+.about-container {
     display: flex;
     justify-content: space-around;
     width: 1000px;
@@ -186,7 +190,7 @@ a {
     width: 500px;
 }
 
-.social-cont {
+.social-container {
     display: block;
     height: 140px;
     width: 900px;
@@ -196,14 +200,6 @@ a {
     display: flex;
     align-items: center;
     height: 140px;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -217,7 +213,7 @@ a {
 }
 
 @media only screen and (max-width: 1050px) {
-    .port-cont {
+    .port-container {
         width: 900px;
     }
 
@@ -225,7 +221,7 @@ a {
         width: 800px;
     }
 
-    .about-cont {
+    .about-container {
         flex-direction: column;
         align-items: center;
         height: 700px;
@@ -240,7 +236,7 @@ a {
 }
 
 @media only screen and (max-width: 930px) {
-    .port-cont {
+    .port-container {
         width: 850px;
     }
 
@@ -252,7 +248,7 @@ a {
         margin-top: 0px;
     }
 
-    .about-cont {
+    .about-container {
         height: 1000px;
 
     }
@@ -265,12 +261,11 @@ a {
         float: none;
     }
 
-    .social-cont {
+    .social-container {
         width: 280px;
         margin: 0 auto;
         height: 280px;
     }
-
 
 }
 
@@ -282,13 +277,13 @@ a {
         justify-items: center;
     }
 
-    .port-cont {
+    .port-container {
         flex-direction: column;
         align-items: center;
         width: 20px;
     }
 
-    .nav-cont {
+    .nav-container {
         margin: 0 auto;
         float: none;
         overflow: auto;
@@ -323,7 +318,7 @@ a {
 }
 
 @media only screen and (max-width: 610px) {
-    .nav-cont {
+    .nav-container {
         width: 300px;
     }
 
@@ -375,7 +370,7 @@ a {
         margin: 0;
     }
 
-    .social-cont {
+    .social-container {
         width: 300px;
     }
 
