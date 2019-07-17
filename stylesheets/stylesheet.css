@@ -140,12 +140,15 @@ a {
     width: 400px;
     position: relative;
 }
-.port-item h4{
+
+.port-item h4 {
     margin-bottom: 80px;
 }
-.port-item h3{
+
+.port-item h3 {
     margin-top: 5px;
 }
+
 .port-img:hover {
     webkit-filter: blur(4px);
     filter: blur(4px);
@@ -216,11 +219,13 @@ a {
 .work-exp-box {
     margin-left: 20px;
 }
-#mail{
+
+#mail {
     color: #003049;
     font-size: 4rem;
     margin-top: 40px;
 }
+
 .social-container {
     display: block;
     height: 140px;
@@ -429,7 +434,8 @@ a {
     .email-box {
         width: 350px;
     }
-    #mail{
+
+    #mail {
         font-size: 3rem;
     }
 }
