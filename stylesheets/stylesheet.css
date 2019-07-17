@@ -404,11 +404,12 @@ a {
     }
 
     .container {
-        width: 400px;
+        width: 350px;
     }
 
     .work-exp-box {
         margin: 0 auto;
+        width:300px;
     }
 
     .work-exp-box h2 {
