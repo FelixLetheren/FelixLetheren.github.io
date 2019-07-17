@@ -34,9 +34,8 @@ header::after {
 
 h1 {
     font-size: 7rem;
-    margin: 0;
+    margin: 0 0 0 20px;
     color: #003049;
-    margin-left: 20px;
 }
 
 h2 {
@@ -129,36 +128,29 @@ a {
     width: 700px;
 }
 
-.port-container {
+.portfolio-container {
     display: flex;
     justify-content: space-between;
     width: 1000px;
     margin: 0 auto;
 }
 
-.port-item {
+.portfolio-item {
     width: 400px;
     position: relative;
 }
 
-.port-item h4 {
+.portfolio-item h4 {
     margin-bottom: 80px;
 }
 
-.port-item h3 {
+.portfolio-item h3 {
     margin-top: 5px;
 }
 
-.port-img:hover {
-    webkit-filter: blur(4px);
+.portfolio-img:hover {
+    -webkit-filter: blur(4px);
     filter: blur(4px);
-}
-
-.img-cover {
-    position: absolute;
-    top: 90px;
-    left: 50px;
-    width: 300px;
 }
 
 .about-container {
@@ -189,7 +181,6 @@ a {
 .skill-img {
     height: 80px;
     width: 80px;
-
 }
 
 .exp-img {
@@ -255,7 +246,6 @@ a {
     transform: scale(1.1);
 }
 
-
 @media only screen and (max-width: 1200px) {
     .exp-entry p {
         width: 700px;
@@ -267,7 +257,7 @@ a {
 }
 
 @media only screen and (max-width: 1050px) {
-    .port-container {
+    .portfolio-container {
         width: 900px;
     }
 
@@ -289,7 +279,7 @@ a {
 }
 
 @media only screen and (max-width: 930px) {
-    .port-container {
+    .portfolio-container {
         width: 850px;
     }
 
@@ -330,7 +320,7 @@ a {
         justify-items: center;
     }
 
-    .port-container {
+    .portfolio-container {
         flex-direction: column;
         align-items: center;
         width: 20px;
@@ -375,11 +365,11 @@ a {
         width: 300px;
     }
 
-    .port-item {
+    .portfolio-item {
         width: 350px;
     }
 
-    .port-item img {
+    .portfolio-item img {
         max-width: 100%;
         max-height: 100%;
     }
