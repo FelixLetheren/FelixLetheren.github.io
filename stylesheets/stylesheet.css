@@ -242,6 +242,15 @@ a {
     margin-left: 20px;
 }
 
+.social-item img {
+    transition: all .2s ease-in-out;
+}
+
+.social-item img:hover {
+    transform: scale(1.1);
+}
+
+
 @media only screen and (max-width: 1200px) {
     .exp-entry p {
         width: 700px;
