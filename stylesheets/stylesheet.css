@@ -12,6 +12,7 @@ header {
     background-color: #003049;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 header::after {
@@ -137,6 +138,19 @@ a {
 
 .port-item {
     width: 400px;
+    position: relative;
+}
+
+.port-img:hover {
+    webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.img-cover {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    width: 300px;
 }
 
 .about-container {
@@ -212,6 +226,15 @@ a {
     display: flex;
     align-items: center;
     height: 140px;
+    width: 316px;
+}
+
+.social-item img {
+    height: 100px;
+}
+
+.social-item a {
+    margin-left: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
