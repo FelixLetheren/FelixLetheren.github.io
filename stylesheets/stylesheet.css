@@ -458,3 +458,33 @@ a {
         font-size: 3rem;
     }
 }
+
+@media only screen and (max-width: 370px) {
+    #mail {
+        font-size: 2.5rem;
+    }
+
+    .email-box {
+        width: 300px;
+    }
+
+    .social-item a {
+        font-size: 2.2rem;
+    }
+
+    .social-item {
+        width: 300px;
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    .portfolio-item {
+        width: 300px;
+    }
+}
