@@ -12,6 +12,33 @@ header {
     background-color: #003049;
     position: sticky;
     top: 0;
+    z-index: 1;
+}
+
+.hero {
+    position: relative;
+}
+
+.pointer-arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #003049;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 54px;
+    z-index: -1;
+}
+
+#about-pointer {
+    left: 30%;
+}
+
+#portfolio-pointer {
+    left: 1%;
+}
+
+#contact-pointer {
+    left: 56%
 }
 
 header::after {
@@ -33,9 +60,8 @@ header::after {
 
 h1 {
     font-size: 7rem;
-    margin: 0;
+    margin: 0 0 0 20px;
     color: #003049;
-    margin-left: 20px;
 }
 
 h2 {
@@ -46,6 +72,7 @@ h2 {
 
 .skills h2 {
     color: #EAE2B7;
+    margin: 10px 0;
 }
 
 .bio h2 {
@@ -125,17 +152,32 @@ a {
 .nav-container {
     float: right;
     width: 700px;
+    position: relative;
 }
 
-.port-container {
+.portfolio-container {
     display: flex;
     justify-content: space-between;
     width: 1000px;
     margin: 0 auto;
 }
 
-.port-item {
+.portfolio-item {
     width: 400px;
+    position: relative;
+}
+
+.portfolio-item h4 {
+    margin-bottom: 80px;
+}
+
+.portfolio-item h3 {
+    margin-top: 5px;
+}
+
+.portfolio-img:hover {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
 }
 
 .about-container {
@@ -156,6 +198,16 @@ a {
     background-color: #003049;
     width: 350px;
     padding: 10px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-img {
+    height: 80px;
+    width: 80px;
 }
 
 .exp-img {
@@ -184,10 +236,13 @@ a {
 
 .work-exp-box {
     margin-left: 20px;
+    margin-top: 30px;
 }
 
-.email {
-    width: 500px;
+#mail {
+    color: #003049;
+    font-size: 4rem;
+    margin-top: 40px;
 }
 
 .social-container {
@@ -200,6 +255,23 @@ a {
     display: flex;
     align-items: center;
     height: 140px;
+    width: 316px;
+}
+
+.social-item img {
+    height: 100px;
+}
+
+.social-item a {
+    margin-left: 20px;
+}
+
+.social-item img {
+    transition: all .2s ease-in-out;
+}
+
+.social-item img:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -213,7 +285,7 @@ a {
 }
 
 @media only screen and (max-width: 1050px) {
-    .port-container {
+    .portfolio-container {
         width: 900px;
     }
 
@@ -229,14 +301,13 @@ a {
     }
 
     .skills {
-        margin-top: 60px;
-        background-color: #F77F00;
+        margin-top: 0;
     }
 
 }
 
 @media only screen and (max-width: 930px) {
-    .port-container {
+    .portfolio-container {
         width: 850px;
     }
 
@@ -245,11 +316,11 @@ a {
     }
 
     .skills {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .about-container {
-        height: 1000px;
+        height: 800px;
 
     }
 
@@ -277,7 +348,7 @@ a {
         justify-items: center;
     }
 
-    .port-container {
+    .portfolio-container {
         flex-direction: column;
         align-items: center;
         width: 20px;
@@ -322,17 +393,21 @@ a {
         width: 300px;
     }
 
-    .port-item {
+    .portfolio-item {
         width: 350px;
     }
 
-    .port-item img {
+    .portfolio-item img {
         max-width: 100%;
         max-height: 100%;
     }
 
     .bio {
         width: 300px;
+    }
+
+    .about-container {
+        height: 1000px;
     }
 
     .skills {
@@ -347,11 +422,12 @@ a {
     }
 
     .container {
-        width: 400px;
+        width: 350px;
     }
 
     .work-exp-box {
         margin: 0 auto;
+        width: 300px;
     }
 
     .work-exp-box h2 {
@@ -376,5 +452,39 @@ a {
 
     .email-box {
         width: 350px;
+    }
+
+    #mail {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #mail {
+        font-size: 2.5rem;
+    }
+
+    .email-box {
+        width: 300px;
+    }
+
+    .social-item a {
+        font-size: 2.2rem;
+    }
+
+    .social-item {
+        width: 300px;
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    .portfolio-item {
+        width: 300px;
     }
 }
