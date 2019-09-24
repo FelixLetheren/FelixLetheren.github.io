@@ -261,7 +261,6 @@ a {
 #mail {
     color: #003049;
     font-size: 4rem;
-    margin-top: 40px;
 }
 
 .social-container {
@@ -483,7 +482,7 @@ a {
     }
 
     #mail {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
